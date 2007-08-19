@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for extension 'menu'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="flexform.general_section">Main</label>
+			<label index="flexform.menuDirection">Direction:</label>
+			<label index="flexform.menuDirection.1">Horizontal</label>
+			<label index="flexform.menuDirection.2">Vertical</label>
+			<label index="flexform.startingNode">Starting node:</label>
+			<label index="flexform.level">Levels</label>
+			<label index="flexform.level.1">1</label>
+			<label index="flexform.level.2">Unlimited</label>
+
+			<label index="flexform.template_section">Render</label>
+			<label index="flexform.renderType">Render type:</label>
+			<label index="flexform.renderType.1">Normal text</label>
+			<label index="flexform.renderType.2">TTF text</label>
+			<label index="flexform.paddingImage">Padding text:</label>
+			<label index="flexform.angleImage">Angle text:</label>
+			<label index="flexform.fontFile">Font file:</label>
+			<label index="flexform.backgroundRender">Background render type:</label>	
+			<label index="flexform.backgroundRender.1">Color</label>
+			<label index="flexform.backgroundRender.2">Image(Page image definition overrides this!)</label>
+			<label index="flexform.backgroundImage">Background image:</label>
+			<label index="flexform.backgroundImageOver">Background image over:</label>
+			<label index="flexform.backgroundImageActive">Background image active:</label>
+			<label index="flexform.menuColor">Background color:</label>
+			<label index="flexform.menuColorOver">Background color over:</label>
+			<label index="flexform.menuColorActive">Background color active:</label>
+			<label index="flexform.fontSize">Font size:</label>
+			<label index="flexform.fontColor">Font color:</label>
+			<label index="flexform.fontColorOver">Font color over:</label>
+			<label index="flexform.fontColorActive">Font color active:</label>
+			<label index="flexform.menuWidth">Item width:</label>
+			<label index="flexform.menuHeight">Item height:</label>
+			<label index="flexform.paddingLeftNormal">Padding left:</label>
+			<label index="flexform.paddingRightNormal">Padding right:</label>
+			<label index="flexform.paddingBottomNormal">Padding bottom:</label>
+			<label index="flexform.paddingTopNormal">Padding top:</label>
+
+			<label index="flexform.border_section">Border</label>
+			<label index="flexform.borderWidth">Border width:</label>
+			<label index="flexform.borderType">Border type:</label>
+			<label index="flexform.borderType.1">Solid</label>
+			<label index="flexform.borderType.2">Dashed</label>	
+			<label index="flexform.borderType.3">Dotted</label>
+			<label index="flexform.borderColor">Border color:</label>
+
+			<label index="flexform.css_section">CSS</label>
+			<label index="flexform.cssClassName">CSS class name:</label>
+			<label index="flexform.cssFile">CSS file:</label>
+
+			<label index="flexform.firstlevel_section">Render 1º level</label>
+			<label index="flexform.menuColorMain">Background color:</label>
+			<label index="flexform.menuColorMainOver">Background color over:</label>
+			<label index="flexform.fontSizeMain">Font size:</label>
+			<label index="flexform.fontColorMain">Font color:</label>
+			<label index="flexform.fontColorMainOver">Font color over:</label>
+			<label index="flexform.fontColorMainActive">Font color active:</label>
+			<label index="flexform.menuWidthMain">Item with:</label>
+			<label index="flexform.menuHeightMain">Item height:</label>
+			<label index="flexform.marginLeft">Margin left:</label>
+			<label index="flexform.marginRight">Margin right:</label>
+			<label index="flexform.marginBottom">Margin bottom:</label>
+			<label index="flexform.marginTop">Margin top:</label>
+			<label index="flexform.paddingLeft">Padding left:</label>
+			<label index="flexform.paddingRight">Padding right:</label>
+			<label index="flexform.paddingBottom">Padding bottom:</label>
+			<label index="flexform.paddingTop">Padding top:</label>
+
+			<label index="flexform.imageMarker1_section">Image marker 1º level</label>
+			<label index="flexform.imageMarker_section">Image marker</label>
+			<label index="flexform.imageMarkerSelection">Image marker render:</label>
+			<label index="flexform.imageMarkerSelection.1">Default</label>
+			<label index="flexform.imageMarkerSelection.2">Custom</label>
+			<label index="flexform.imageMarkerSelection.3">Hide</label>
+			<label index="flexform.rightPointer">Right pointer:</label>
+			<label index="flexform.rightPointerWidth">Right pointer width:</label>
+			<label index="flexform.rightPointerHeight">Right pointer height:</label>
+			<label index="flexform.downPointer">Down pointer:</label>
+			<label index="flexform.downPointerWidth">Down pointer width:</label>
+			<label index="flexform.downPointerHeight">Down pointer height:</label>
+
+		</languageKey>
+		<languageKey index="pt" type="array">
+			<label index="flexform.general_section">Principal</label>
+			<label index="flexform.template_section">Renderização</label>
+			<label index="flexform.css_section">CSS</label>
+			<label index="flexform.margin_section">Margem</label>
+			<label index="flexform.menuDirection">Direcção:</label>
+			<label index="flexform.menuDirection.1">Horizontal</label>
+			<label index="flexform.menuDirection.2">Vertical</label>
+			<label index="flexform.menuWidthMain">1º nível - Largura do de menu:</label>
+			<label index="flexform.menuHeightMain">1º nível - Altura do de menu:</label>
+			<label index="flexform.marginLeft">1º nível - Margem esquerda:</label>
+			<label index="flexform.marginRight">1º nível - Margem direita:</label>
+			<label index="flexform.marginBottom">1º nível - Margem de fundo:</label>
+			<label index="flexform.marginTop">1º nível - Margem do topo:</label>
+			<label index="flexform.menuWidth">Largura dos níveis de menu:</label>	
+			<label index="flexform.menuHeight">Altura dos níveis de menu:</label>				
+			<label index="flexform.renderType">Tipo de render:</label>	
+			<label index="flexform.renderType.1">Texto</label>
+			<label index="flexform.renderType.2">Imagem</label>	
+			<label index="flexform.borderWidth">Largura do bordo:</label>			
+			<label index="flexform.borderType">Tipo de bordo:</label>		
+			<label index="flexform.borderType.1">Sólida</label>
+			<label index="flexform.borderType.2">Traços</label>
+			<label index="flexform.borderType.3">Pontos</label>
+			<label index="flexform.borderColor">Cor do filete:</label>
+			<label index="flexform.fontSize">Tamanho da fonte:</label>
+			<label index="flexform.padding">Espaçamento do texto:</label>
+			<label index="flexform.fontFile">Ficheiro de fonte:</label>									
+			<label index="flexform.startingNode">Primeiro nó do menu:</label>	
+			<label index="flexform.cssClassName">Nome da class CSS:</label>
+			<label index="flexform.cssFile">Folha de estilos:</label>				
+		</languageKey>		
+	</data>
+</T3locallang>

@@ -1,0 +1,84 @@
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.hidden, dfn{
+	display:none;
+}
+
+.container_defaultMenuClassName_horizontalimage ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.container_defaultMenuClassName_horizontalimage ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+/*Top level menu link items style*/
+.container_defaultMenuClassName_horizontalimage ul li a{
+display: block;
+border: 0px solid #fff;
+border-left-width: 0;
+text-decoration: none;
+}
+	
+/*1st sub level menu*/
+.container_defaultMenuClassName_horizontalimage ul li ul{
+left: 0;
+position: absolute;
+top: 1em; /* no need to change, as true value set by script */
+display: block;
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.container_defaultMenuClassName_horizontalimage ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels offset after 1st level sub menu */
+.container_defaultMenuClassName_horizontalimage ul li ul li ul{ 
+/*left: 159px;  no need to change, as true value set by script */
+top: 0;
+}
+
+/* Sub level menu links style */
+.container_defaultMenuClassName_horizontalimage ul li ul li a{
+display: block;
+/*width: 160px; width of sub menu levels*/
+color: #fff;
+text-decoration: none;
+border: 0px solid #fff;
+border-top: 0px solid #fff;
+}
+
+.container_defaultMenuClassName_horizontalimage ul li a:hover{
+color: white;
+}
+
+/*Background image for top level menu list links */
+.container_defaultMenuClassName_horizontalimage .mainfoldericon{
+}
+
+/*Background image for subsequent level menu list links */
+.container_defaultMenuClassName_horizontalimage .subfoldericon{
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows suckertree menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+
+a#container_defaultMenuClassName_horizontalimage_active{
+
+}
+
+	
+/* Holly Hack for IE \*/
+* html .container_defaultMenuClassName_horizontalimage ul li { float: left; height: 1%; }
+* html .container_defaultMenuClassName_horizontalimage ul li a { height: 1%; }
+/* End */

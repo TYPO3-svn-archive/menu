@@ -1,0 +1,1480 @@
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+		<langChildren>1</langChildren>
+	</meta>	
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.general_section</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+
+					<!--
+					/* SuckerFish */
+					-->	 	
+					<menuDirection>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuDirection</label>					
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuDirection.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuDirection.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>	
+								</items>
+								<default>1</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</menuDirection>
+					<!--
+					/* SuckerFish
+					 * Configures the menu main item with.
+					 */
+					-->
+					<!--
+					/* Common */
+					-->
+					<startingNode>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.startingNode</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>pages</allowed>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>1</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</startingNode>
+					<level>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.level</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.level.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.level.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</level>
+				</el>
+			</ROOT>
+		</sDEF>
+		<sDEF5>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.firstlevel_section</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<renderTypeMain>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.renderType</label>						
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.renderType.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.renderType.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>																																						
+								</items>				
+								<default>1</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</renderTypeMain>
+					<paddingMainImage>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingImage</label>
+							<displayCond>FIELD:renderTypeMain:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>3</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingMainImage>
+					<angleMainImage>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.angleImage</label>
+							<displayCond>FIELD:renderTypeMain:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</angleMainImage>
+					/* SuckerFish
+					 * Choose font file for render on top of image. 
+					-->
+					<fontFileMain>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontFile</label>
+							<displayCond>FIELD:renderTypeMain:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>ttf</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>0</show_thumbs>
+							</config>
+						</TCEforms>
+					</fontFileMain>
+					<menuWidthMain>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuWidthMain</label>				
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>160</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</menuWidthMain>
+					<!--
+					/* SuckerFish	
+					 * Configures the menu main item height.
+					 */
+					-->	
+					<menuHeightMain>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuHeightMain</label>					
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>30</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</menuHeightMain>
+					<backgroundRenderTypeMain>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundRender</label>						
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundRender.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundRender.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</backgroundRenderTypeMain>
+					<!--
+					/* SuckerFish
+					 * Color picker.
+					 */
+					-->
+					<menuColorMain>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuColorMain</label>
+					  <displayCond>FIELD:backgroundRenderTypeMain:=:1</displayCond>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#666666</default>
+					  </config>
+					  </TCEforms>
+					</menuColorMain>
+					<!--
+					/* SuckerFish
+					 * Color picker.
+					 */
+					-->
+					<menuColorMainOver>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuColorMainOver</label>
+					  <displayCond>FIELD:backgroundRenderTypeMain:=:1</displayCond>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#999999</default>
+					  </config>
+					  </TCEforms>
+					</menuColorMainOver>
+					<menuColorMainActive>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuColorActive</label>
+					  <displayCond>FIELD:backgroundRenderTypeMain:=:1</displayCond>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#FFFFFF</default>
+					  </config>
+					  </TCEforms>
+					</menuColorMainActive>
+					<backgroundImageMain>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundImage</label>
+							<displayCond>FIELD:backgroundRenderTypeMain:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</backgroundImageMain>
+					<backgroundImageMainOver>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundImageOver</label>
+							<displayCond>FIELD:backgroundRenderTypeMain:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</backgroundImageMainOver>
+					<backgroundImageMainActive>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundImageActive</label>
+							<displayCond>FIELD:backgroundRenderTypeMain:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</backgroundImageMainActive>
+					<!--
+					/* SuckerFish 	
+					 * Choose font size.
+					 */
+					-->
+					<fontSizeMain>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontSizeMain</label>
+							<config>
+								<type>input</type>
+								<size>2</size>
+								<default>14</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</fontSizeMain>
+					<!--
+					/* SuckerFish
+					 * Color picker.
+					 */
+					-->
+					<fontColorMain>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontColorMain</label>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#FFFFFF</default>
+					  </config>
+					  </TCEforms>
+					</fontColorMain>
+					<!--
+					/* SuckerFish
+					 * Color picker.
+					 */
+					-->
+					<fontColorMainOver>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontColorMainOver</label>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#F0F0F0</default>
+					  </config>
+					  </TCEforms>
+					</fontColorMainOver>
+					<fontColorMainActive>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontColorMainActive</label>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#333333</default>
+					  </config>
+					  </TCEforms>
+					</fontColorMainActive>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<marginLeft>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.marginLeft</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</marginLeft>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<marginRight>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.marginRight</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</marginRight>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<marginTop>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.marginTop</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</marginTop>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<marginBottom>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.marginBottom</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</marginBottom>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingLeft>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingLeft</label>
+							<displayCond>FIELD:renderTypeMain:=:1</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>10</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingLeft>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingRight>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingRight</label>
+							<displayCond>FIELD:renderTypeMain:=:1</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingRight>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingTop>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingTop</label>
+							<displayCond>FIELD:renderTypeMain:=:1</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>10</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingTop>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingBottom>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingBottom</label>
+							<displayCond>FIELD:renderTypeMain:=:1</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingBottom>
+				</el>
+			</ROOT>
+		</sDEF5>
+		<sDEF2>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.template_section</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!--
+					/* SuckerFish
+					 * Choose image render type, text on image using GDlib or similar. 
+					 */					
+					-->	 	
+					<renderType>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.renderType</label>						
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.renderType.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.renderType.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>																																						
+								</items>				
+								<default>1</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</renderType>
+					<paddingImage>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingImage</label>
+							<displayCond>FIELD:renderType:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>3</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingImage>
+					<angleImage>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.angleImage</label>
+							<displayCond>FIELD:renderType:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</angleImage>
+					/* SuckerFish
+					 * Choose font file for render on top of image. 
+					-->
+					<fontFile>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontFile</label>
+							<displayCond>FIELD:renderType:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>ttf</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>0</show_thumbs>
+							</config>
+						</TCEforms>
+					</fontFile>
+					<!--
+					/* SuckerFish, ApplicationMEnu
+					 * Configures the menu item with.
+					 */
+					-->
+					<menuWidth>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuWidth</label>				
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>160</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</menuWidth>
+					<!--
+					/* SuckerFish
+					 * Configures the menu item height.
+					 */
+					-->
+					<menuHeight>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuHeight</label>					
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>20</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</menuHeight>
+					<backgroundRenderType>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundRender</label>						
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundRender.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundRender.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</backgroundRenderType>
+					<!--
+					/* SuckerFish
+					 * Color picker.
+					 */
+					-->
+					<menuColor>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuColor</label>
+					  <displayCond>FIELD:backgroundRenderType:=:1</displayCond>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#F0F0F0</default>
+					  </config>
+					  </TCEforms>
+					</menuColor>
+					<!--
+					/* SuckerFish
+					 * Color picker.
+					 */
+					-->
+					<menuColorOver>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuColorOver</label>
+					  <displayCond>FIELD:backgroundRenderType:=:1</displayCond>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#CCCCCC</default>
+					  </config>
+					  </TCEforms>
+					</menuColorOver>
+					<menuColorActive>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.menuColorActive</label>
+					  <displayCond>FIELD:backgroundRenderType:=:1</displayCond>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#666666</default>
+					  </config>
+					  </TCEforms>
+					</menuColorActive>
+					<backgroundImage>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundImage</label>
+							<displayCond>FIELD:backgroundRenderType:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</backgroundImage>
+					<backgroundImageOver>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundImageOver</label>
+							<displayCond>FIELD:backgroundRenderType:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</backgroundImageOver>
+					<backgroundImageActive>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.backgroundImageActive</label>
+							<displayCond>FIELD:backgroundRenderType:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</backgroundImageActive>
+					<!--
+					/* SuckerFish 	
+					 * Choose font size.
+					 */
+					-->
+					<fontSize>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontSize</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>10</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</fontSize>
+					<!--
+					/* SuckerFish
+					 * Color picker.
+					 */
+					-->
+					<fontColor>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontColor</label>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#333333</default>
+					  </config>
+					  </TCEforms>
+					</fontColor>
+					<!--
+					/* SuckerFish
+					 * Color picker.
+					 */
+					-->
+					<fontColorOver>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontColorOver</label>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#000000</default>
+					  </config>
+					  </TCEforms>
+					</fontColorOver>
+					<fontColorActive>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.fontColorActive</label>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#FFFFFF</default>
+					  </config>
+					  </TCEforms>
+					</fontColorActive>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<marginLeftNormal>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.marginLeft</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</marginLeftNormal>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<marginRightNormal>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.marginRight</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</marginRightNormal>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<marginTopNormal>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.marginTop</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</marginTopNormal>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<marginBottomNormal>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.marginBottom</label>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</marginBottomNormal>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingLeftNormal>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingLeftNormal</label>
+							<displayCond>FIELD:renderType:=:1</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>10</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingLeftNormal>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingRightNormal>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingRightNormal</label>
+							<displayCond>FIELD:renderType:=:1</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingRightNormal>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingTopNormal>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingTopNormal</label>
+							<displayCond>FIELD:renderType:=:1</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>5</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingTopNormal>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingBottomNormal>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingBottomNormal</label>
+							<displayCond>FIELD:renderType:=:1</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>0</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingBottomNormal>
+				</el>
+			</ROOT>
+		</sDEF2>
+		<sDEF7>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarker1_section</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!--
+					/* SuckerFish
+					 * Choose image marker render type.
+					 */
+					-->
+					<imageMarkerSelection1>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarkerSelection</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarkerSelection.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarkerSelection.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarkerSelection.3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</imageMarkerSelection1>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingTopImageMarker1>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingTop</label>
+							<displayCond>FIELD:imageMarkerSelection1:=:1,2</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>10</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingTopImageMarker1>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingRightImageMarker1>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingRight</label>
+							<displayCond>FIELD:imageMarkerSelection1:=:1,2</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>5</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingRightImageMarker1>
+					<rightPointer1Width>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.rightPointerWidth</label>				
+							<displayCond>FIELD:imageMarkerSelection1:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>15</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</rightPointer1Width>
+					<!--
+					/* SuckerFish	
+					 * Configures the menu main item height.
+					 */
+					-->	
+					<rightPointer1Height>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.rightPointerHeight</label>					
+							<displayCond>FIELD:imageMarkerSelection1:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>15</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</rightPointer1Height>
+					<!--
+					/* Right pointer */
+					-->
+					<rightPointer1>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.rightPointer</label>
+							<displayCond>FIELD:imageMarkerSelection1:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>1</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</rightPointer1>
+					<downPointer1Width>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.downPointerWidth</label>				
+							<displayCond>FIELD:imageMarkerSelection1:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>15</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</downPointer1Width>
+					<!--
+					/* SuckerFish	
+					 * Configures the menu main item height.
+					 */
+					-->	
+					<downPointer1Height>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.downPointerHeight</label>					
+							<displayCond>FIELD:imageMarkerSelection1:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>15</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</downPointer1Height>
+					<!--
+					/* Down pointer */
+					-->
+					<downPointer1>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.downPointer</label>
+							<displayCond>FIELD:imageMarkerSelection1:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>1</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</downPointer1>
+				</el>
+			</ROOT>
+		</sDEF7>
+		<sDEF8>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarker_section</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!--
+					/* SuckerFish
+					 * Choose image marker render type.
+					 */
+					-->
+					<imageMarkerSelection>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarkerSelection</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarkerSelection.1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarkerSelection.2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.imageMarkerSelection.3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+								</items>
+								<default>1</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</imageMarkerSelection>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingTopImageMarker>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingTop</label>
+							<displayCond>FIELD:imageMarkerSelection:=:1,2</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>5</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingTopImageMarker>
+					/* SuckerFish 
+					 * Choose margin.
+					 */
+					<paddingRightImageMarker>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.paddingRight</label>
+							<displayCond>FIELD:imageMarkerSelection:=:1,2</displayCond>
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>5</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</paddingRightImageMarker>
+					<rightPointerWidth>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.rightPointerWidth</label>				
+							<displayCond>FIELD:imageMarkerSelection:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>15</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</rightPointerWidth>
+					<!--
+					/* SuckerFish	
+					 * Configures the menu main item height.
+					 */
+					-->	
+					<rightPointerHeight>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.rightPointerHeight</label>					
+							<displayCond>FIELD:imageMarkerSelection:=:2</displayCond>
+							<config>
+								<type>input</type>
+								<size>3</size>	
+								<default>15</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</rightPointerHeight>
+					<!--
+					/* Right pointer */
+					-->
+					<rightPointer>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.rightPointer</label>
+							<displayCond>FIELD:imageMarkerSelection:=:2</displayCond>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>gif,png,jpg</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>1</minitems>
+								<show_thumbs>1</show_thumbs>
+							</config>
+						</TCEforms>
+					</rightPointer>
+				</el>
+			</ROOT>
+		</sDEF8>
+		<sDEF3>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.border_section</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!--
+					/* SuckerFish 
+					 * Border width.
+					 */
+					-->
+					<borderWidth>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.borderWidth</label>					
+							<config>
+								<type>input</type>
+								<size>2</size>	
+								<default>1</default>
+								<eval>num</eval>
+							</config>
+						</TCEforms>
+					</borderWidth>
+					<!--
+					/* SuckerFish
+					 * Border type.
+					 */
+					-->
+					<borderType>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.borderType</label>
+							<config>
+								<type>select</type>
+								<items type="array">	
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.borderType.1</numIndex>
+										<numIndex index="1">solid</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.borderType.2</numIndex>
+										<numIndex index="1">dashed</numIndex>
+									</numIndex>	
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.borderType.3</numIndex>
+										<numIndex index="1">dotted</numIndex>
+									</numIndex>
+								</items>
+								<default>dashed</default>
+								<minitems>1</minitems>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</borderType>
+					<!--
+					/* SuckerFish
+					 * Border color picker.
+					 */
+					-->
+					<borderColor>
+					  <TCEforms>
+					  <label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.borderColor</label>
+					  <config>
+					    <type>input</type>
+					    <size>10</size>
+					    <wizards>
+					      <colorpick>
+					        <type>colorbox</type>
+					        <title>LLL:EXT:partner/locallang.php:tx_partner.label.color_picker</title>
+					        <script>wizard_colorpicker.php</script>
+					        <dim>20x20</dim>
+					        <tableStyle>border: solid 1px black; margin-left: 20px;</tableStyle>
+					        <JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+					        <exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+					      </colorpick>
+					    </wizards>
+						<default>#CCCCCC</default>
+					  </config>
+					  </TCEforms>
+					</borderColor>
+				</el>
+			</ROOT>
+		</sDEF3>
+		<sDEF6>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.css_section</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<!--
+					/* Common */
+					-->	 					
+					<cssClassName>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.cssClassName</label>
+							<config>
+								<type>input</type>
+								<size>30</size>	
+								<default>defaultMenuClassName_</default>
+							</config>
+						</TCEforms>
+					</cssClassName>	
+					<!--
+					/* Common */
+					-->
+					<cssFile>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:menu/res/suckerfish/locallang.xml:flexform.cssFile</label>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>css</allowed>
+								<uploadfolder>uploads/tx_menu</uploadfolder>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<minitems>0</minitems>
+								<show_thumbs>0</show_thumbs>		
+							</config>
+						</TCEforms>
+					</cssFile>
+				</el>
+			</ROOT>
+		</sDEF6>
+	</sheets>
+</T3DataStructure>

@@ -1,0 +1,69 @@
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+a
+{
+  outline: none;
+}
+.container_defaultMenuClassName_vertical ul{
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+/* width: 160px;  Width of Menu Items */
+/* border-top: 1px solid #fff; */
+}
+	
+.container_defaultMenuClassName_vertical ul li{
+position: relative;
+/* background-color: #669933; */
+
+}
+
+li#container_defaultMenuClassName_vertical_active a{
+position: relative;
+/* background-color: #000; */
+}
+	
+/*Sub level menu items */
+.container_defaultMenuClassName_vertical ul li ul{
+position: absolute;
+/* width: 170px; */ /*sub menu width*/ 
+top: 0px;
+/* visibility: hidden; */
+}
+
+a#container_defaultMenuClassName_vertical_active{
+/* background-color: #000; */
+}
+
+/* Sub level menu links style */
+.container_defaultMenuClassName_vertical ul li a{
+display: block;
+overflow: auto; /*force hasLayout in IE7 */
+/* color: #fff; */
+text-decoration: none;
+/* background-color: #669933; */
+/* padding: 1px 5px; */
+/* border: 1px solid #fff; */
+/* border-bottom: 0px solid #fff; */
+
+}
+
+.container_defaultMenuClassName_vertical ul li a:visited{
+/* color: #fff; */
+}
+
+.container_defaultMenuClassName_vertical ul li a:hover{
+/* background-color: #333 !important;
+color:#fff; */
+}
+
+.container_defaultMenuClassName_vertical .subfolderstyle{
+/* background-color: #fff; */
+/* background: url(../images/arrow-right_white.png) no-repeat center right; */
+}
+
+	
+/* Holly Hack for IE \*/
+* html .container_defaultMenuClassName_vertical ul li { float: left; height: 1%; }
+* html .container_defaultMenuClassName_vertical ul li a { height: 1%; }
+/* End

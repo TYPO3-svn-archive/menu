@@ -1,0 +1,95 @@
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+.container_defaultMenuClassName_horizontal{
+	display:table;
+}
+.hidden, dfn{
+	display:none;
+}
+
+.container_defaultMenuClassName_horizontal ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.container_defaultMenuClassName_horizontal ul li{
+position: relative;
+display: inline;
+float: left;
+background-color: transparent; /*overall menu background color*/
+}
+
+/*Top level menu link items style*/
+.container_defaultMenuClassName_horizontal ul li a{
+display: block;
+/*width: 90px; Width of top level menu link items*/
+/* padding: 1px 8px; */
+text-decoration: none;
+/* color: #fff; */
+}
+	
+/*1st sub level menu*/
+.container_defaultMenuClassName_horizontal ul li ul{
+left: 0;
+position: absolute;
+/* top: 1em;  no need to change, as true value set by script */
+display: block;
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.container_defaultMenuClassName_horizontal ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels offset after 1st level sub menu */
+.container_defaultMenuClassName_horizontal ul li ul li ul{ 
+/*left: 159px;  no need to change, as true value set by script */
+top: 0;
+}
+
+/* Sub level menu links style */
+.container_defaultMenuClassName_horizontal ul li ul li a{
+display: block;
+/*width: 160px; width of sub menu levels*/
+color: #fff;
+text-decoration: none;
+/* padding: 1px 5px; */
+}
+
+.container_defaultMenuClassName_horizontal ul li a:hover{
+/* background-color: #333; */
+color: white;
+}
+
+/*Background image for top level menu list links */
+.container_defaultMenuClassName_horizontal .mainfoldericon{
+/* background: transparent url(../images/arrow-down_white.png) no-repeat center right; */
+}
+
+/*Background image for subsequent level menu list links */
+.container_defaultMenuClassName_horizontal .subfoldericon{
+/* background: transparent url(../images/arrow-right_white.png) no-repeat center right; */
+}
+
+/*Background image for subsequent level menu list links */
+.container_defaultMenuClassName_horizontal .subfoldericonleft{
+/* background: transparent url(../images/arrow-left_white.png) no-repeat center right; */
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows suckertree menu, add 1em top spacing between the two in IE*/
+
+}
+
+a#container_defaultMenuClassName_horizontal_active{
+background-color: #000;
+}
+
+	
+/* Holly Hack for IE \*/
+* html .container_defaultMenuClassName_horizontal ul li { float: left; height: 1%; }
+* html .container_defaultMenuClassName_horizontal ul li a { height: 1%; }
+/* End */

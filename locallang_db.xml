@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'menu'</description>
+	</meta>
+	<data type="array">pages.tx_menu_icon
+		<languageKey index="default" type="array">
+			<label index="pages.tx_menu_backgroundImage">Menu item image background state NORMAL</label>
+			<label index="pages.tx_menu_backgroundImageOver">Menu item image background state OVER</label>
+			<label index="pages.tx_menu_backgroundImageActive">Menu item image background state ACTIVE</label>
+		</languageKey> 
+	</data>
+</T3locallang>
