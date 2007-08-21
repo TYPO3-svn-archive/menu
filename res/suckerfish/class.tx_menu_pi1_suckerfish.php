@@ -764,16 +764,17 @@ for (var i=0; i<menuids.length; i++){
 			litags[t].getElementsByTagName("a")[0].style.height="'.$this->lConf['menuHeightMain'].'px" // dynamically height link
 			litags[t].getElementsByTagName("a")[0].style.width="'.$this->lConf['menuWidthMain'].'px" // dynamically width link
 			counterGroundLevel++';
-	
+
+			$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.marginRight="'.$this->lConf['marginRight'].'px"';
+			$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.marginTop="'.$this->lConf['marginTop'].'px"';
+			$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.marginBottom="'.$this->lConf['marginBottom'].'px"';
+			$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.marginLeft="'.$this->lConf['marginLeft'].'px"';
+
 			/* Define padding for main level for text render items, image render menus will be define in buildmenu()*/
 			if($this->lConf['renderTypeMain']==1){
-				$outPut .="\n".'		litags[t].getElementsByTagName("a")[0].style.width="'.($this->lConf['menuWidth']+$this->lConf['paddingLeftNormal']+$this->lConf['paddingRightNormal']).'px" // dynamically width link';
+				$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.width="'.($this->lConf['menuWidth']+$this->lConf['paddingLeftNormal']+$this->lConf['paddingRightNormal']).'px" // dynamically width link';
 				$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.color="'.$this->lConf['fontColorMain'].'"';
 				$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.fontSize="'.$this->lConf['fontSizeMain'].'px"';
-				$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.marginRight="'.$this->lConf['marginRight'].'px"';
-				$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.marginTop="'.$this->lConf['marginTop'].'px"';
-				$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.marginBottom="'.$this->lConf['marginBottom'].'px"';
-				$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.marginLeft="'.$this->lConf['marginLeft'].'px"';
 			}
 			$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.paddingLeft="'.$this->lConf['paddingLeft'].'px"';
 			$outPut .="\n".'			litags[t].getElementsByTagName("a")[0].style.paddingRight="'.$this->lConf['paddingRight'].'px"';
