@@ -72,8 +72,8 @@ class tx_menu_pi1_suckerfish extends tslib_pibase{
 		$this->cObj = t3lib_div::makeInstance("tslib_cObj");
 		$this->pageSelect = t3lib_div::makeInstance("t3lib_pageSelect");	
 		$this->pageId = $GLOBALS['TSFE']->id;
-		$this->record =  '_'.substr($GLOBALS['TSFE']->currentRecord,strpos($GLOBALS['TSFE']->currentRecord,':')+1,strlen($GLOBALS['TSFE']->currentRecord)).'_';
-		
+		$this->record =  'id_'.substr($GLOBALS['TSFE']->currentRecord,strpos($GLOBALS['TSFE']->currentRecord,':')+1,strlen($GLOBALS['TSFE']->currentRecord)).'_';
+
  		/*
 		* Get Global variables
 		*/
@@ -293,10 +293,10 @@ class tx_menu_pi1_suckerfish extends tslib_pibase{
 	function loadStylesheet(){
 			// include user stylesheet for menutype
 		if ($this->lConf['cssFile']){
-			$cssPath .= "\n".'<link href="uploads/tx_menu/'.$this->lConf['cssFile'].'" rel=STYLESHEET type="text/css">'."\n";
+			$cssPath .= "\n".'<link href="uploads/tx_menu/'.$this->lConf['cssFile'].'" rel="STYLESHEET" type="text/css" />'."\n";
 		}else{
 			if($this->cssCounter==1){
-					$cssPath .= "\n".'<link href="'.$this->path.'css/suckerfish'.$this->cssDirection.'.css" rel=STYLESHEET type="text/css">'."\n";
+					$cssPath .= "\n".'<link href="'.$this->path.'css/suckerfish'.$this->cssDirection.'.css" rel="STYLESHEET" type="text/css" />'."\n";
 			}
 									
 		}
@@ -506,10 +506,8 @@ class tx_menu_pi1_suckerfish extends tslib_pibase{
 			$newdata = $this->pageSelect->getPageOverlay($data['row'],$language);
 
 			$title =$newdata['title'];
-			$titleText = $title;
+			$titleText = htmlentities($title);
 
-
-					
 			/* Setting active state for main level and others and mouse over and out functionality*/			
 			$identifier = 'id="'.$this->record.'_'.$uid.'"';
 			$onMouseOver = 'onmouseover="'.$this->record.'mouseOverMe(this);"';
@@ -571,7 +569,7 @@ class tx_menu_pi1_suckerfish extends tslib_pibase{
 					foreach($GLOBALS['TSFE']->rootLine as $value){
 						if($value[uid]==$uid){
 							$src=$this->buildImg($newdata['title'],$level,'Active',$value,false);
-							$title='<img id="'.$value.'" src="'.$src.'" alt="'.$newdata['title'].'">';
+							$title='<img id="'.$value.'" src="'.$src.'" alt="'.$newdata['title'].'" />';
 						}
 					}
 				}
@@ -585,7 +583,7 @@ class tx_menu_pi1_suckerfish extends tslib_pibase{
 					foreach($GLOBALS['TSFE']->rootLine as $value){
 						if($value[uid]==$uid){
 							$src = $this->buildImg($newdata['title'],$level,'Active',$value,false);
-							$title='<img id="'.$value.'" src="'.$src.'" alt="'.$newdata['title'].'">';
+							$title='<img id="'.$value.'" src="'.$src.'" alt="'.$newdata['title'].'" />';
 						}
 					}
 				}
@@ -605,7 +603,7 @@ class tx_menu_pi1_suckerfish extends tslib_pibase{
 					$markerPaddingTop = $this->lConf['paddingTopImageMarker'];
 					$markerPaddingRight = $this->lConf['paddingRightImageMarker'];
 				}
-				$imageMarker = '<div id="'.$this->record.'_imageMarkerContainer_'.$uid.'" style="display:none;top:'.$markerPaddingTop.'px;right:'.$markerPaddingRight.'px;float:right;position:absolute;"><img border="0" src="typo3conf/ext/menu/res/common/img/transparent.png" name="'.$this->record.'_imageMarker_'.$uid.'"></div>';
+				$imageMarker = '<img border="0" src="typo3conf/ext/menu/res/common/img/transparent.png" name="'.$this->record.'_imageMarker_'.$uid.'" alt="spacer" id="'.$this->record.'_imageMarkerContainer_'.$uid.'" style="display:none;top:'.$markerPaddingTop.'px;right:'.$markerPaddingRight.'px;float:right;position:absolute;" />';
 
 				$outPut.= $carriageRepeat.'<li level="'.$level.$this->record.'" class="parent'.$this->record.'"><a '.$active.' level="'.$level.'" '.$onMouseOver.' '.$onMouseOut.' href="'.$url.'" title="'.$titleText.'" '.$identifier.'>'.$accCounterRender.$title.$imageMarker.'</a>'.$accFineTuning."\n";	
 				$outPut.= $carriageRepeat.'<ul id="ul_'.$this->record.$uid.'">'."\n";
@@ -985,7 +983,7 @@ function IEHoverPseudo'.$this->record.'() {
 			$outPut.="\n".'					}
 				}		
 				this.getElementsByTagName("ul")[0].style.visibility="visible";
-				this.getElementsByTagName("ul")[0].style.display="block";
+				this.getElementsByTagName("ul")[0].style.display="table";
 			}
 			// ON MOUSE OUT
 			navItems[i].onmouseout=function() { 
@@ -1033,7 +1031,7 @@ function IEHoverPseudo'.$this->record.'() {
 			$outPut.='					}
 				}
 				this.getElementsByTagName("ul")[0].style.visibility="hidden";
-				this.getElementsByTagName("ul")[0].style.display="block";
+				this.getElementsByTagName("ul")[0].style.display="table";
 			}
 		}
 	}
